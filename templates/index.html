@@ -1,0 +1,13 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ICE CREAM SHOP</title>
+    </head>
+    <body>
+        <form action="{{url_for('predict')}}" method="post"> 
+            <input type="text" name="temperature" placeholder="Enter Temperature:"></input>
+            <button type="submit">predict</button></form>
+            <h3>{{prediction_text}}</h3>
+    </body>
+</html>
